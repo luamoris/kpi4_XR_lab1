@@ -76,31 +76,24 @@ function resizeLookBox(m, b) {
    if (m.W <= b.W && m.H <= b.H) {
       size.W = m.W;
       size.H = m.H;
-      console.log(1);
    } else if (m.W <= b.W && m.H > b.H) {
       size.W = (b.H / m.H) * m.W;
       size.H = b.H;
-      console.log(2);
    } else if (m.W > b.W && m.H <= b.H) {
       size.W = b.W;
       size.H = (b.W / m.W) * m.H;
-      console.log(3);
    } else if (m.W > b.W && m.H > b.H) {
       let y = m.H - b.H;
       let x = m.W - b.W;
-      console.log(4);
       if (y == x) {
          size.W = b.W;
          size.H = b.H;
-         console.log(5);
       } else if (y < x) {
          size.W = b.W;
          size.H = (b.W / m.W) * m.H;
-         console.log(6);
       } else {
          size.W = (b.H / m.H) * m.W;
          size.H = b.H;
-         console.log(7);
       }
    }
    size.W = +size.W.toFixed(2);
@@ -119,9 +112,7 @@ function resize(img) {
       let size = resizeLookBox(malSize, boxSize);
       while (!isBoxSizeRichtig(size, boxSize)) {
          size = resizeLookBox(size, boxSize);
-         console.log('12345');
       }
-      console.log(size);
       lookBox.style.width = size.W + 'px';
       lookBox.style.height = size.H + 'px';
 
@@ -141,7 +132,8 @@ function lookingOn(img) {
 
    resize(img);
 
-   let src = img.src.slice(1, img.lenght);
+   // let src = img.src.slice(1, img.lenght); // localhost
+   let src = img.src; // github
    lookBox.style.backgroundImage = `url('` + src + `')`;
    lookBox.style.transform = 'scale(1)';
    lookBox.style.opacity = '1';

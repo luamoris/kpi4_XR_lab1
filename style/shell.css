@@ -16,7 +16,7 @@
 
 .app__container {
    margin: 0 auto;
-   padding: var(--app-padding-y) var(--app-padding-x);
+   padding: var(--app-padding-y) 0;
    max-width: calc(1400px + (2 * var(--app-padding-x)));
 }
 

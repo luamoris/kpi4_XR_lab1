@@ -14,7 +14,7 @@
    --paper-h4-p: 6px;
 
    --pp-contents-text: 16px;
-   --pp-contents-block-p: 30px 0 50px;
+   --pp-contents-block-p: 30px 20px 50px;
    --pp-contents-p-t: 20px;
    --pp-contents-p-l: 40px;
    --pp-contents-item-h: 34px;
@@ -49,7 +49,7 @@
 
 .paper__h1 {
    margin: 0;
-   padding: 0 0 var(--paper-h1-p) 0;
+   padding: 0 20px var(--paper-h1-p) 20px;
 
    text-align: center;
    font-size: var(--paper-h1);
@@ -58,7 +58,7 @@
 
 .paper__h2 {
    margin: 0;
-   padding: 0 0 var(--paper-h2-p) 0;
+   padding: 0 20px var(--paper-h2-p) 20px;
 
    text-align: center;
    line-height: 1.4em;
@@ -446,7 +446,7 @@
 
 @media (max-width: 768px) {
    :root {
-      --paper__block-p: 30px 0;
+      --paper__block-p: 30px 20px;
 
       --paper-text-s: 14px;
       --paper-text-lh: 1.6em;
@@ -464,10 +464,10 @@
 
       --paper-h2: 15px;
 
-      --paper__block-p: 16px 0;
+      --paper__block-p: 16px 20px;
 
       --pp-contents-text: 14px;
-      --pp-contents-block-p: 20px 0 30px;
+      --pp-contents-block-p: 20px 20px 30px;
       --pp-contents-p-t: 16px;
       --pp-contents-p-l: 30px;
       --pp-contents-item-h: 30px;
@@ -508,7 +508,7 @@
 @media (max-width: 425px) {
    :root {
       --pp-contents-text: 12px;
-      --pp-contents-block-p: 14px 0 20px;
+      --pp-contents-block-p: 14px 20px 20px;
       --pp-contents-p-t: 10px;
       --pp-contents-p-l: 30px;
       --pp-contents-item-h: 30px;
